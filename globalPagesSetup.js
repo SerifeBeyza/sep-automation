@@ -2,6 +2,8 @@ import { LeftMainPage } from "./pages/LeftMainPage.js";
 import { PaymentPlanPage } from "./pages/PaymentPlanPage.js";
 import { StartApplicationPage } from "./pages/StartApplicationPage.js";
 import { ReviewPaymentPage } from "./pages/ReviewPaymentPage.js";
+import {DannieContactPage} from "./pages/DannieContactPage.js"
+import { type } from "os";
 // Import OTHER PAGES CLASSES HERE...
 
 
@@ -25,12 +27,17 @@ export let startApplicationPage;
  * @type {import('./pages/ReviewPaymentPage.js').ReviewPaymentPage}
  */
 export let reviewPaymentPage;
+/** 
+* @type {import('./pages/DannieContactPage.js').DannieContactPage}
+*/export let dannieContactPage;
 
 /**
  * @type {import('playwright').Page}
  */
 export let page;
 // ADD OTHER PAGE CLASS REFERENCES HERE...
+
+
 
 
 
@@ -47,6 +54,8 @@ export const initElements = (argPage) => {
     paymentPlanPage = new PaymentPlanPage(page);
     startApplicationPage = new StartApplicationPage(page);
     reviewPaymentPage = new ReviewPaymentPage(page);
+    dannieContactPage = new DannieContactPage(page);
+
     // INITIALIZE PAGE INSTANCES HERE...
 
 

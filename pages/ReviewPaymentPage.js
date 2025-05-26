@@ -7,7 +7,9 @@ export class ReviewPaymentPage extends BasePage {
   constructor(page) {
     super(page);
 
+    //this.paymentForm2 = page.locator("//iframe[contains(@src, 'elements-inner-payment')]");
     this.paymentForm = page.locator("//form[@id='payment-form']");
+    
 
     this.paymentFrame = page.frameLocator(
       "(//iframe[contains(@title, 'Secure payment')])[1]"

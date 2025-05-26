@@ -121,5 +121,7 @@ export class PaymentPlanPage extends BasePage {
     this.step2 = page.locator("//div[@class='step-circle'][contains(.,'2')]");
     this.step3 = page.locator("//div[@class='step-circle'][contains(.,'3')]");
     this.UpfrontText = page.locator("//span[@class='payment-type']");
+
+    
   }
 }
